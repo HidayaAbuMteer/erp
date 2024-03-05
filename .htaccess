@@ -1,0 +1,20 @@
+Option -Indexes -MultiViews +FollowSymlinks
+CheckSpelling off
+
+#auto include
+php_value include_path "C:/xampp/htdocs/erp/"
+php_value auto_prepend_file autoload.php
+php_value auto_apend_file footer.php
+
+
+#Routes
+RewriteEngine On
+
+
+
+#file without ext
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php
+
+
