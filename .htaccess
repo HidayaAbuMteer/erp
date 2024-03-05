@@ -1,5 +1,10 @@
-Option -Indexes -MultiViews +FollowSymlinks
-CheckSpelling off
+# Option -Indexes -MultiViews +FollowSymlinks
+Options -SymLinksIfOwnerMatch
+# CheckSpelling off
+
+<IfModule mod_speling.c>
+  CheckSeplling On
+</IfModule>
 
 #auto include
 php_value include_path "C:/xampp/htdocs/erp/"

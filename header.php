@@ -287,7 +287,7 @@
     <ul class="sidebar-nav" id="sidebar-nav">
 
       <li class="nav-item">
-        <a class="nav-link " href="index.php">
+        <a class="nav-link " href="index">
           <i class="bi bi-grid"></i>
           <span>لوحة التحكم </span>
         </a>
@@ -295,7 +295,7 @@
 
       <!--start setting nav -->
      <li class="nav-item">
-        <a class="nav-link " href="settings.php">
+        <a class="nav-link " href="settings">
           <i class="bi bi-gear"></i>
           <span>اعدادات النظام  </span>
         </a>

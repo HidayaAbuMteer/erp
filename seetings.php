@@ -1,4 +1,4 @@
-<?php include 'header.php'; ?>
+
 
 <div class="pagetitle">
       <h1>اعدادات النظام</h1>
@@ -73,5 +73,5 @@
         
       </div>
     </section>
-<?php include 'footer.php'; ?>
+
 
