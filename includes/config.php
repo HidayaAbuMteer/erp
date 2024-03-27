@@ -14,7 +14,7 @@ error_reporting(E_ALL ^ E_DEPRECATED ^ E_WARNING);
 define("HOST", "localhost");     // The host you want to connect to.
 define("USER", "root");    // The database username. 
 define("PASSWORD", "");    // The database password. 
-define("DATABASE", "erp");    // The database name. 
+define("DATABASE", "new_erp");    // The database name. 
 define("CHARSET", "utf8");    // The database name. 
 $options = [
     PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,

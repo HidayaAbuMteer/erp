@@ -1,0 +1,3 @@
+#auto include
+php_value auto_prepend_file admin/base.php
+php_value auto_apend_file none

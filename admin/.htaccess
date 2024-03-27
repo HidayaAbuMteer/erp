@@ -1,0 +1,50 @@
+#auto include
+php_value auto_prepend_file admin/autoload.php
+php_value auto_append_file admin/footer.php
+
+
+# Routes
+RewriteEngine On
+
+RewriteRule ^options/?$ settings.php [QSA,L]
+
+# Users files
+RewriteRule ^employees/?$ users/allUsers.php [QSA,L]
+
+RewriteRule ^employees/([0-9])/remove/?$ users/allUsers.php?id=$1&action=remove [QSA,L]
+
+RewriteRule ^employees/new/?$ users/newUser.php [QSA,L]
+RewriteRule ^employees/search/?$ users/search.php [QSA,L]
+RewriteRule ^employees/reports/?$ users/reports.php [QSA,L]
+RewriteRule ^employees/logs/?$ users/logsUser.php [QSA,L]
+RewriteRule ^employees/([0-9]+)/edit/?$ users/editUser.php?id=$1[QSA,L]
+
+# Admin login/logout
+RewriteRule ^auth/?$ auth/login.php
+RewriteRule ^auth/login/?$ auth/login.php
+RewriteRule ^auth/logout/?$ auth/logout.php
+
+# punish
+RewriteRule ^punish/?$ punish/all.php [QSA,L]
+RewriteRule ^punish/new/?$ punish/new.php [QSA,L]
+
+
+# Degree
+RewriteRule ^degree/?$ degree/all.php [QSA,L]
+RewriteRule ^degree/new/?$ degree/new.php [QSA,L]
+
+# Rewards
+RewriteRule ^Rewards/?$ rewards/all.php [QSA,L]
+RewriteRule ^rewards/new/?$ rewards/new.php [QSA,L]
+
+# Admin Contact
+RewriteRule ^acontact/?$ admin_contact/all.php [QSA,L]
+RewriteRule ^acontact/([0-9]+)/view/?$ admin_contact/view.php?id=$1[QSA,L]
+
+
+# file without ext
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php
+
+

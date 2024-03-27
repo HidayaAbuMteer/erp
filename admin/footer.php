@@ -4,7 +4,7 @@
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
     <div class="copyright">
-      &copy; Copyright <strong><span>NiceAdmin</span></strong>. All Rights Reserved
+      &copy; :صمم بكل حب بواسطة <a href="http://" target="_blank" >هداية أبو مطير</a>
     </div>
     <div class="credits">
       <!-- All the links in the footer should remain intact. -->
