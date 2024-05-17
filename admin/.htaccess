@@ -22,11 +22,6 @@ RewriteRule ^employees/([0-9]+)/edit/?$ users/editUser.php?id=$1[QSA,L]
 # Admin login/logout
 RewriteRule ^auth/?$ auth/login.php
 RewriteRule ^auth/login/?$ auth/login.php
-RewriteRule ^auth/logout/?$ auth/logout.php
-
-# punish
-RewriteRule ^punish/?$ punish/all.php [QSA,L]
-RewriteRule ^punish/new/?$ punish/new.php [QSA,L]
 
 
 # Degree
