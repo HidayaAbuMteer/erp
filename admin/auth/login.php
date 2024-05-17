@@ -133,8 +133,10 @@ if(isset($_POST['login'])){
                       <button class="btn btn-primary w-100" type="submit" name="login">الدخول</button>
                     </div>
                     <div class="col-12">
-                    ** لتجربة النظام **
-                    البريد الالكتروني:admin@gmail.com
+                    ** لتجربة النظام **<br>
+
+                    البريد الالكتروني:admin@gmail.com<br>
+                    
                     كلمة السر:admin
                     </div>
                      
